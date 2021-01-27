@@ -1,0 +1,47 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url("img/pexels-sebastian-palomino-1955134.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+div{
+    margin: auto;
+    width: 650px;
+    height: 490px;
+    background-image: url("img/pexels-kelson-downes-1149137.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    animation: banner 10s infinite linear alternate;
+    margin-top: 200px;
+}
+
+@keyframes banner {
+    0%,30%{
+        background-image: url("img/pexels-kelson-downes-1149137.jpg");
+        opacity: 1;
+    }
+    31%,34%{
+        opacity: 0.5;
+    }
+    35%,65%{
+        background-image: url("img/pexels-mike-112460.jpg");
+        opacity: 1;
+    }
+    66%,69%{
+        opacity: 0.5;
+    }
+    70%,100%{
+        background-image: url("img/pexels-pixabay-210019.jpg");
+    }
+
+}
+
+@media only screen and (min-width: 400px) and (max-width:700px) {
+    div{
+        width: 400px;
+        height: 300px;
+    }
+}
+
